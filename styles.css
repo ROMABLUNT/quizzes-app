@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.catalog {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.catalog.visible {
+    display: block;
+    opacity: 1;
+}
+
+.card-img {
+    width: 12em;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.intro.visible {
+    opacity: 1;
+}
+
+.intro.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.intro-h2 {
+    font-size: 2rem;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.quiz-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.quiz-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.quiz-item h2 {
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.quiz-item p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.start-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+
+.katalog-cards {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
