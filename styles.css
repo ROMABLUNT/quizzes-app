@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(https://img.gazeta.ru/files3/615/19159615/664f406602e8bd35e1222c11-pic_32ratio_900x600-900x600-42710.jpg);
+    background-image: url(images/664f406602e8bd35e1222c11-pic_32ratio_900x600-900x600-42710.jpg);
     background-size: 400px 400px;
     background-position: center;
     color: #000;
@@ -51,7 +51,7 @@ body {
 }
 
 header {
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/2533919441101888304/FFE446E501B09D46B220BE23031F234BA3EEC9EE/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+    background-image: url(images/download.jpg);
     color: white;
     padding: 7rem;
     text-align: center;
@@ -117,7 +117,7 @@ footer {
 
 .quiz-section {
     padding: 2rem;
-    background-image: url(https://s.rbk.ru/v1_companies_s3/media/trademarks/85427aee-1429-4fa7-bdd1-d1d660fa3273.jpg);
+    background-image: url(images/85427aee-1429-4fa7-bdd1-d1d660fa3273.jpg);
     background-position: center;
     background-size: 20%;
     border-radius: 8px;
