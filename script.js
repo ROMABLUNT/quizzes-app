@@ -96,22 +96,22 @@ function startQuiz(quizId) {
 }
 
 // // Функция для завершения викторины и подсчета результата
-// function submitQuiz() {
-//     const quizQuestionsContainer = document.getElementById('quiz-questions');
-//     let correctAnswers = 0;
-//     let totalQuestions = quizQuestionsContainer.querySelectorAll('.quiz-question').length;
+ function submitQuiz() {
+    const quizQuestionsContainer = document.getElementById('quiz-questions');
+    let correctAnswers = 0;
+     let totalQuestions = quizQuestionsContainer.querySelectorAll('.quiz-question').length;
 
-//     // Проходим по всем вопросам
-//     quizQuestionsContainer.querySelectorAll('.quiz-question').forEach((questionDiv, index) => {
-//         const selectedOption = questionDiv.querySelector(`input[name="question_${index}"]:checked`);
+     // Проходим по всем вопросам
+     quizQuestionsContainer.querySelectorAll('.quiz-question').forEach((questionDiv, index) => {
+        const selectedOption = questionDiv.querySelector(`input[name="question_${index}"]:checked`);
         
-//         if (selectedOption) {
-//             const userAnswer = parseInt(selectedOption.value);
-//             if (quizData[1].questions[index].correct === userAnswer) {
-//                 correctAnswers++;
-//             }
-//         }
-//     });
+        if (selectedOption) {
+             const userAnswer = parseInt(selectedOption.value);
+             if (quizData[1].questions[index].correct === userAnswer) {
+                 correctAnswers++;
+             }
+         }
+     });
 
-//     alert(`Вы ответили правильно на ${correctAnswers} из ${totalQuestions} вопросов.`);
-// }
+     alert(`Вы ответили правильно на ${correctAnswers} из ${totalQuestions} вопросов.`);
+ }
