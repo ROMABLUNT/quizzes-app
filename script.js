@@ -25,7 +25,7 @@ const quizData = {
         ]
     },
     2: {
-        title: 'goida',
+        title: 'ny pravda',
         questions: [
             { question: 'goida?', options: ['da', 'svo', 'chechenzi'], correct: 1 },
             { question: 'chei krim?', options: ['moi', 'svo', 'chechenzi', 'nash'], correct: 1 },
