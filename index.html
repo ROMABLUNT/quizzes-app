@@ -11,44 +11,45 @@
     <div class="intro" id="intro">
         <h2 class="intro-h2">Quizzes by ROMA BLUNT</h2>
     </div>
-    <div class="catalog" id="catalog">
+    <div class="main" id="main">
         <header>
             <h1>Каталог Викторин</h1>
         </header>
-        <div class="katalog-cards">
-            <section class="quiz-catalog">
-                <div class="quiz-item">
-                    <img class="card-img" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/a39f264e-e54e-4a3c-b3ae-66ae1b6d3422/600x900">
-                    <h2>А ты знал?</h2>
-                    <p>Тема: знал? знал?</p>
-                    <button class="start-btn" onclick="startQuiz(1)">Начать викторину</button>
-                </div>
     
-                <div class="quiz-item">
-                    <img class="card-img" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/a39f264e-e54e-4a3c-b3ae-66ae1b6d3422/600x900">
-                    <h2>Викторина 2</h2>
-                    <p>Тема: История</p>
-                    <button class="start-btn" onclick="startQuiz(2)">Начать викторину</button>
-                </div>
-    
-                <div class="quiz-item">
-                    <img class="card-img" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/a39f264e-e54e-4a3c-b3ae-66ae1b6d3422/600x900">
-                    <h2>Викторина 3</h2>
-                    <p>Тема: География</p>
-                    <button class="start-btn" onclick="startQuiz(3)">Начать викторину</button>
-                </div>
+        <!-- Каталог викторин -->
+        <main id="main-content">
+            <section id="quiz-catalog">
+                <!-- Здесь динамически будут добавляться викторины -->
             </section>
+    
+            <button id="create-quiz-btn">Создать новую викторину</button>
+        </main>
+    
+        <div id="create-quiz-container" style="display: none;">
+            <h2>Создание новой викторины</h2>
+            
+            <label for="quiz-title">Название викторины:</label>
+            <input type="text" id="quiz-title" placeholder="Введите название">
+    
+            <div id="questions-container">
+                <!-- Здесь будут динамически добавляться вопросы -->
+            </div>
+    
+            <button id="add-question-btn">Добавить вопрос</button>
+    
+            <button id="submit-quiz-btn">Создать викторину</button>
+    
+            <button id="cancel-create-quiz-btn">Отмена</button>
+        </div>
+    
+        <div id="quiz-section" style="display: none;">
+            <h2 id="quiz-title-display"></h2>
+            <div id="quiz-questions">
+                <!-- Здесь будут отображаться вопросы викторины -->
+            </div>
+            <button id="submit-quiz-answers-btn">Завершить викторину</button>
         </div>
     </div>
-
-    <section class="quiz-section" id="quiz-section" style="display:none;">
-        <h2 id="quiz-title"></h2>
-        <div id="quiz-questions"></div>
-        <button class="submit-btn" id="submit-quiz" style="display:none;" onclick="submitQuiz()">Завершить викторину</button>
-    </section>
-    <footer>
-        <p>© 2024 ROMA BLUNT</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
