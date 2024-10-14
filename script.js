@@ -164,7 +164,6 @@ function submitQuizAnswers() {
 
     alert(`Вы ответили правильно на ${correctAnswers} из ${totalQuestions} вопросов.`);
 
-    // Возвращаемся к каталогу
     document.getElementById('quiz-section').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
 }
@@ -224,8 +223,7 @@ function submitQuiz() {
         return;
     }
 
-    // Проходим по каждому вопросу и собираем данные
-    let isValid = true; // Флаг для проверки корректности ввода
+    let isValid = true; 
 
     questions.forEach((q, index) => {
         const questionText = document.getElementById(`question_${index}`).value;
@@ -234,7 +232,6 @@ function submitQuiz() {
         const option3 = document.getElementById(`option_${index}_2`).value;
         const correctOption = document.getElementById(`correct_${index}`).value;
 
-        // Проверка на заполнение полей
         if (!questionText || !option1 || !option2 || !option3) {
             alert(`Пожалуйста, заполните все поля для вопроса ${index + 1}.`);
             isValid = false;
@@ -249,19 +246,14 @@ function submitQuiz() {
 
     if (!isValid) return;
 
-    // Создаем объект новой викторины
     const newQuiz = {
         title: quizTitle,
         questions: questions
     };
 
-    // Получаем текущие пользовательские викторины
     const userQuizzes = getUserQuizzes();
 
-    // Добавляем новую викторину
     userQuizzes.push(newQuiz);
-
-    // Сохраняем обновленный список викторин
     saveUserQuizzes(userQuizzes);
 
     // Обновляем каталог викторин
@@ -277,5 +269,5 @@ function submitQuiz() {
 function clearQuizForm() {
     document.getElementById('quiz-title').value = '';
     document.getElementById('questions-container').innerHTML = '';
-    questions = []; // Очищаем массив вопросов
+    questions = []; 
 }
